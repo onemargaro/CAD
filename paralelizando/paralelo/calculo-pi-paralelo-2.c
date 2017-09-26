@@ -18,17 +18,13 @@ int main(int argc, char *argv[]){
     MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
     aux = n/size;
+    for (i = myrank, j = 0; i <= n; j++,i = (j*size)+myrank) {
+      x = h*((double)i-0.5);
+      sum+=f(x);
+    }
     if(myrank != 0) {
-        for (i = myrank, j = 0; i <= n; j++,i = (j*size)+myrank) {
-          x = h*((double)i-0.5);
-          sum+=f(x);
-        }
       MPI_Send(&sum, 1, MPI_DOUBLE, 0, tag, MPI_COMM_WORLD);
     }else{
-      for (i = myrank, j = 0; i <= n; j++,i = (j*size)+myrank) {
-          x = h*((double)i-0.5);
-          sum+=f(x);
-        }
       for(origen = 1; origen < size; origen++) {
         MPI_Recv(&x, 1, MPI_DOUBLE, origen, tag, MPI_COMM_WORLD, &status);
         sum+=x;
