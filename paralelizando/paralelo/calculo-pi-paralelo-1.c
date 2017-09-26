@@ -20,25 +20,25 @@ int main(int argc, char *argv[]){
     aux = n/size;
     if(myrank != 0) {
       if (myrank+1 == size) { // en caso de que sea el último proceso
-        printf("\nintervalo de %d a %d\n", (myrank*aux) - aux, n);
+        // printf("\nintervalo de %d a %d\n", (myrank*aux) - aux, n);
         for (i = (myrank * aux) - aux; i <= n; i++){
           x = h*((double)i-0.5);
           sum+=f(x);
         }
-        // printf("\nsuma = %d\n", sum); preguntar sobre esto al profesor
+        // printf("\nsuma = %d\n", sum); //preguntar sobre esto al profesor
       }else{
-        printf("\nintervalo de %d a %d\n", (myrank*aux) - aux, (myrank*aux)-1);
+        // printf("\nintervalo de %d a %d\n", (myrank*aux) - aux, (myrank*aux)-1);
         for (i = (myrank * aux) - aux; i <= (myrank * aux) - 1; i++){
           x = h*((double)i-0.5);
           sum+=f(x);
         }
-        // printf("\nsuma = %d\n", sum); preguntar sobre esto al profesor
+        // printf("\nsuma = %d\n", sum); //preguntar sobre esto al profesor
       }
       MPI_Send(&sum, 1, MPI_DOUBLE, 0, tag, MPI_COMM_WORLD);
     }else{
       for(origen = 1; origen < size; origen++) {
         MPI_Recv(&x, 1, MPI_DOUBLE, origen, tag, MPI_COMM_WORLD, &status);
-        //printf("Suma de proceso %d   sum=%d\n", origen, x); igual preguntar
+        // printf("Suma de proceso %d   sum=%d\n", origen, x); //igual preguntar
         sum+=x;
       }
       pi = h*sum;
