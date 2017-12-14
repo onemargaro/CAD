@@ -4,12 +4,32 @@
 		"selected_items":
 		[
 			[
-				"MPI_Co",
-				"MPI_COMM_WORLD"
+				"pri",
+				"printf\tprintf …"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"num",
+				"num_threads"
 			],
 			[
 				"MPI",
-				"MPI_CHAR"
+				"MPI_FLOAT"
+			],
+			[
+				"recv",
+				"recvbuf"
+			],
+			[
+				"send",
+				"sendcount"
+			],
+			[
+				"MPI_Co",
+				"MPI_COMM_WORLD"
 			],
 			[
 				"MP",
@@ -494,26 +514,6 @@
 			[
 				"cance",
 				"cancelacion"
-			],
-			[
-				"Cancel",
-				"Cancelado\t(ClienteController.php)"
-			],
-			[
-				"peri",
-				"periodicidad\t(tablaClientes.html)"
-			],
-			[
-				"for",
-				"foreach\tforeach …"
-			],
-			[
-				"Il",
-				"Ilduomo"
-			],
-			[
-				"nego",
-				"negocio\t(tablaClientesCtrl.js)"
 			]
 		]
 	},
@@ -544,9 +544,13 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "",
+		"last_filter": "setsyntac",
 		"selected_items":
 		[
+			[
+				"setsyntac",
+				"Set Syntax: C"
+			],
 			[
 				"format",
 				"phpfmt: toggle PSR1 - Class and Methods names"
@@ -752,7 +756,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 552.0
+		"width": 486.0
 	},
 	"console":
 	{
@@ -773,16 +777,29 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/openmp",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/openmp/holaMundo",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/openmp/iteraciones"
 	],
 	"file_history":
 	[
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/Comunicacion/comunicacion2.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/Scatter/Scatter.c",
+		"/Users/Margaro/Documents/proyectos/cifrado-hill-mpi/main.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/saludo/saludo.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/openmp/holaMundo/holamundo.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/openmp/iteraciones/iteraciones.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/Reduce/Scatter.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/paralelizando/paralelo/calculo-pi-paralelo-1.c",
+		"/Users/Margaro/Desktop/config-sublime.json",
 		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/paralelizando/paralelo/calculo-pi-paralelo-2.c",
-		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/paralelizando/paralelo/calculo-pi-paralelo.c",
 		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/holaMundo/holamundo.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/paralelizando/serial/calculo-pi-serial.c",
+		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/paralelizando/paralelo/calculo-pi-paralelo.c",
 		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/.editorconfig",
 		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/.editorconfig..editorconfig",
 		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/saludo/saludo_2.c",
-		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/saludo/saludo.c",
 		"/Users/Margaro/Documents/proyectos/computoDeAltoDesempeño/productoPunto/productoPunto.c",
 		"/Users/Margaro/Documents/proyectos/pozosesferaserver/routes/web.php",
 		"/Users/Margaro/Documents/proyectos/pozosesferaserver/app/Http/Controllers/CotizacionController.php",
@@ -894,20 +911,11 @@
 		"/Users/Margaro/Documents/proyectos/pozosesferaserver/vendor/dusterio/lumen-passport/src/Http/Controllers/AccessTokenController.php",
 		"/Users/Margaro/Documents/proyectos/pozosesferaserver/app/Providers/AuthServiceProvider.php",
 		"/Users/Margaro/Documents/proyectos/pozosesferaserver/vendor/illuminate/support/ServiceProvider.php",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/config/auth.php",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/vendor/laravel/passport/src/Passport.php",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/resources/views/template_content_angularjs2/index.html",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/artisan",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/readme.md",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/database/seeds/TipoClienteSeeder.php",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/config/oauth2.php",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/database/migrations/2014_04_24_111657_create_oauth_access_token_scopes_table.php",
-		"/Users/Margaro/Documents/proyectos/pozosesferaserver/resources/views/home.blade.php",
-		"/Users/Margaro/Desktop/laradock/env-example"
+		"/Users/Margaro/Documents/proyectos/pozosesferaserver/config/auth.php"
 	],
 	"find":
 	{
-		"height": 32.0
+		"height": 67.0
 	},
 	"find_in_files":
 	{
@@ -926,6 +934,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"MPI_FLOAT",
+			"EGER",
+			"for(i=0; i<max; i++) private++;\n        printf(\"iteraciones: %d\\n\", private);",
+			"100000",
+			"600",
+			"parallel",
+			"%d",
+			"for (i = myrank, j = 0; i <= n; j++,i = (j*size)+myrank) {\n          x = h*((double)i-0.5);\n          sum+=f(x);\n        }",
 			"for (i = myrank, j = 0; i <= n; j++,i = (j*size)+myrank) {",
 			"+rank",
 			"rank",
@@ -1045,15 +1061,7 @@
 			"$cotizacion->fechaAcuerdo = $request->input(\"fechaAcuerdo\")",
 			",",
 			"cotizacionTipoServicio",
-			"tiposServicio",
-			"$c",
-			"horaProspecto",
-			"metrosExcavación",
-			"estado",
-			"$estado",
-			"estado",
-			"tipoServicios",
-			"$domicilio->calle = $request->input(\"calle\");\n        $domicilio->numeroExterno = $request->input(\"numeroExterno\");\n        $domicilio->referencias = $request->input(\"referencias\");\n        $domicilio->coordenadas = $request->input(\"coordenadas\");\n        $domicilio->coloniaId = $request->input(\"coloniaId\");"
+			"tiposServicio"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1080,7 +1088,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -1133,7 +1141,7 @@
 	"project": "computoDeAltoDesempeño.sublime-project",
 	"replace":
 	{
-		"height": 60.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1660,15 +1668,23 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "ac",
+		"last_filter": "cifr",
 		"selected_items":
 		[
 			[
-				"ac",
-				"~/Documents/proyectos/arqcs/arquitectura-cliente-servidor-codigos.sublime-project"
+				"cifr",
+				"~/Documents/proyectos/cifrado-hill-mpi/cifrado-hill-mpi.sublime-project"
+			],
+			[
+				"hi",
+				"~/Documents/proyectos/cifrado-hill-mpi/cifrado-hill-mpi.sublime-project"
 			],
 			[
 				"",
+				"~/Documents/proyectos/arqcs/arquitectura-cliente-servidor-codigos.sublime-project"
+			],
+			[
+				"ac",
 				"~/Documents/proyectos/arqcs/arquitectura-cliente-servidor-codigos.sublime-project"
 			],
 			[
@@ -1711,7 +1727,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 211.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
